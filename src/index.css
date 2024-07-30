@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Red Hat Text";
+  src: url(./assets/fonts/RedHatText.ttf);
+}
+
+:root {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  @apply bg-rose-50;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+h1 {
+  @apply text-5xl font-bold mb-10;
+}
+
+h2 {
+  @apply text-2xl font-bold mb-2;
+}
+
+button {
+  @apply cursor-default
+}
+
+.btn-primary {
+  @apply cursor-pointer bg-primary text-white rounded-full w-full p-4 hover:bg-[#952c0c];
+}
+
+.btn-remove svg {
+  @apply text-rose-300 cursor-pointer min-w-5 min-h-5 aspect-square border border-current rounded-full p-1 hover:text-black;
+}
+
+
+.list {
+  @apply grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3;
+}
+
+.card {
+  @apply flex flex-col;
+}
+
+.card-active .card-image {
+  @apply outline outline-offset-0 outline-2 outline-primary;
+}
+
+.card-button,
+.card-button-active {
+  @apply flex items-center gap-2 w-2/3 mx-auto px-4 py-2 -mt-5 mb-4 rounded-full text-sm outline outline-offset-0 outline-1;
+}
+
+.card-button {
+  @apply cursor-pointer justify-center bg-white font-semibold outline-rose-300 hover:text-primary hover:outline-primary;
+}
+
+.card-button-active {
+  @apply outline-primary justify-between bg-primary text-white;
+}
+
+.btn-quantity svg {
+  @apply text-white cursor-pointer border border-white rounded-full p-1 size-4 hover:text-primary hover:bg-white;
+}
+
+.card-description {
+  @apply flex flex-col gap-1;
+}
+
+.modal {
+  @apply fixed inset-0 bg-black bg-opacity-50 grid place-content-center;
+}
+
+.modal-content {
+  @apply w-full min-w-[50vw] bg-white p-8 rounded-lg;
+}
