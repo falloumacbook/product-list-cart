@@ -3,6 +3,7 @@
 ![Design preview for the Product list with cart coding challenge](./src/design/preview.jpg)
 
 ## Welcome! 👋
+live preview: https://falloumacbook.github.io/product-list-cart/
 
 Thanks for checking out this front-end coding challenge.
 
