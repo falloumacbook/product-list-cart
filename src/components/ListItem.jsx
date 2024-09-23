@@ -76,7 +76,7 @@ export default function ListItem() {
   return (
     <>
       <div>
-        <h1 className="font-semibold ">Desserts</h1>
+        <h1 className="font-semibold text-amber-800 text-5xl ">Desserts</h1>
         <div className="list">
           {data.map((item, index) => (
             <Item key={index} item={item} />
