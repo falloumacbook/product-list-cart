@@ -16,7 +16,15 @@ export default function OrderModal() {
     <>
       {isOpenModal && (
         <div className="modal">
-          <div className="modal-content">
+          <div className="modal-content relative">
+            {/* Close (X) button */}
+            <button
+              className="absolute top-4 right-4 text-4xl font-bold text-gray-500 hover:text-gray-700"
+              onClick={() => setIsOpenModal(false)}
+              aria-label="Close"
+            >
+              &times;
+            </button>
             <img className="size-12 mb-8" src={iconOrderConfirmed} alt="" />
             <h2 className="text-4xl">Order Confirmed</h2>
             <p>We hope you enjoy your food!</p>
